@@ -1,0 +1,308 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LakbayTayo</title>
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="search-container">
+    <input type="text" id="destinationSearch" placeholder="Search destination...">
+    <i class="fa-solid fa-magnifying-glass"></i>
+</div>
+
+    <!-- ================= NAVIGATION ================= -->
+
+    <header class="Navigation">
+
+    <div class="logo-container">
+        <img src="LakbayTayo_logo.png" class="logo">
+    </div>
+
+    <nav>
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+
+        <button class="buttons">Sign Up</button>
+        <button class="buttons1">Login</button>
+    </nav>
+
+</header>
+
+
+<!-- ================= DESTINATIONS ================= -->
+
+    <section id="home" class="destinations">
+
+        <div class="section-title">
+            <p>EXPLORE</p>
+            <h2>Popular Destinations</h2>
+        </div>
+
+
+        <div class="destination-container">
+
+            <!-- MAIN DESTINATION -->
+
+            <div class="main-destination">
+
+                <div class="main-image-container">
+
+                    <img
+                        id="mainImage"
+                        src="Tagaytay.jpg"
+                        alt="Tagaytay"
+                    >
+
+                    <div class="image-number">
+                        <span id="currentNumber">01</span>
+                        <span>/ 04</span>
+                    </div>
+
+                </div>
+
+
+                <div class="main-info">
+
+                    <p class="location-label" id="mainLocation">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>CAVITE, PHILIPPINES</span>
+                    </p>
+
+                    <h1 id="mainTitle">
+                        TAGAYTAY <br>
+                        CITY
+                    </h1>
+
+                    <p id="mainDescription">
+                        Tagaytay is a popular tourist destination in the
+                        Philippines known for its cool weather, beautiful
+                        views of Taal Volcano and Taal Lake, and relaxing
+                        cafés and restaurants.
+                    </p>
+                    <a id="discoverLink" href="destination.html" target="_blank">
+                        <button class="discover-btn">
+                            DISCOVER MORE
+                        </button>
+                    </a>
+                </div>
+
+            </div>
+
+
+            <!-- ================= SIDE CARDS ================= -->
+
+            <div class="side-destinations">
+
+                <!-- TAGAYTAY -->
+
+                <div
+                    class="destination-card active"
+                    data-image="Tagaytay.jpg"
+                    data-title="TAGAYTAY CITY"
+                    data-location="CAVITE, PHILIPPINES"
+                    data-description="Tagaytay is a popular tourist destination in the Philippines known for its cool weather, beautiful views of Taal Volcano and Taal Lake, and relaxing cafés and restaurants."
+                    data-number="01"
+                    data-color="rgba(0, 255, 0, 0.7)"
+                    data-page="destination.html#tagaytay"
+                    
+                >
+
+                    <img src="Tagaytay.jpg" alt="Tagaytay">
+
+                    <div class="card-overlay">
+                        <span>01</span>
+                        <h3>TAGAYTAY<br>CITY</h3>
+                    </div>
+
+                </div>
+
+
+                <!-- BAGUIO -->
+
+                <div
+                    class="destination-card"
+                    data-image="baguio.jpg"
+                    data-title="BAGUIO CITY"
+                    data-location="BENGUET, PHILIPPINES"
+                    data-description="Baguio City is known as the Summer Capital of the Philippines. It is famous for its cool climate, beautiful mountain scenery, pine trees, and relaxing tourist attractions."
+                    data-number="02"
+                    data-color="rgba(180, 90, 30, 0.7)"
+                    data-page="destination.html#baguio"
+                >
+
+                    <img src="baguio.jpg" alt="Baguio">
+
+                    <div class="card-overlay">
+                        <span>02</span>
+                        <h3>BAGUIO<br>CITY</h3>
+                    </div>
+
+                </div>
+
+
+                <!-- BORACAY -->
+
+                <div
+                    class="destination-card"
+                    data-image="boracay.webp"
+                    data-title="BORACAY ISLAND"
+                    data-location="AKLAN, PHILIPPINES"
+                    data-description="Boracay is famous for its beautiful beaches, clear waters, white sand, and exciting activities. It is one of the most popular island destinations in the Philippines."
+                    data-number="03"
+                    data-color="rgba(0, 157, 196, 0.7)"
+                    data-page="destination.html#aklan"
+                >
+
+                    <img src="boracay.webp" alt="Boracay">
+
+                    <div class="card-overlay">
+                        <span>03</span>
+                        <h3>BORACAY<br>ISLAND</h3>
+                    </div>
+
+                </div>
+
+
+                <!-- CHOCOLATE HILLS -->
+
+                <div
+                    class="destination-card"
+                    data-image="bohol.jpg"
+                    data-title="CHOCOLATE 
+                    HILLS"
+                    data-location="BOHOL, PHILIPPINES"
+                    data-description="Siargao is a beautiful island destination known for surfing, beaches, lagoons, palm trees, and its relaxing tropical atmosphere."
+                    data-number="04"
+                    data-color="rgba(255, 192, 103, 0.7)"
+                    data-page="destination.html#bohol"
+                >
+
+                    <img src="bohol.jpg" alt="Siargao">
+
+                    <div class="card-overlay">
+                        <span>04</span>
+                        <h3>CHOCOLATE<br>HILLS</h3>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section id="about" class="about">
+
+        <div class="about-image">
+
+            <img src="ph.jpg" alt="Philippines">
+
+        </div>
+
+        <div class="about-content">
+
+            <p class="section-label">ABOUT LAKBAYTAYO</p>
+
+            <h2>
+                YOUR NEXT
+                <span>ADVENTURE</span>
+                STARTS HERE.
+            </h2>
+
+            <p>
+                LakbayTayo is a travel and destination website created
+                to help people discover beautiful places in the
+                Philippines.
+            </p>
+
+            <p>
+                From cool mountain destinations to relaxing beaches,
+                LakbayTayo gives you a simple way to explore different
+                places and find your next adventure.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+
+    <section id="contact" class="contact">
+
+        <div class="contact-content">
+
+            <p class="section-label">GET IN TOUCH</p>
+
+            <h2>
+                PLAN YOUR NEXT
+                <span>LAKBAY</span>
+            </h2>
+
+            <p>
+                Have a destination in mind? Send us a message and
+                let's talk about your next adventure.
+            </p>
+
+        </div>
+
+
+        <form class="contact-form">
+
+            <input
+                type="text"
+                placeholder="Your Name"
+                required
+            >
+
+            <input
+                type="email"
+                placeholder="Your Email"
+                required
+            >
+
+            <textarea
+                placeholder="Your Message"
+                rows="5"
+                required (10)
+            ></textarea>
+
+            <button type="submit">
+                SEND MESSAGE
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-logo">
+            Lakbay<span>Tayo</span>
+        </div>
+
+        <p>
+            © 2026 LakbayTayo. Explore. Discover. Enjoy.
+        </p>
+
+    </footer>
+
+
+    <script src="index.js"></script>
+
+</body>
+</html>

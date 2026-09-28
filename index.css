@@ -1,0 +1,894 @@
+:root {
+    --nav-color: green;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Times New Roman", Times, serif;
+    background: #111;
+    color: white;
+    background-color: white;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+.Navigation {
+    width: 100%;
+    height: 65px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    padding: 0 25px;
+
+    background-color: white;
+
+    z-index: 9999;
+
+    --nav-color: rgba(0, 255, 0, 1);
+
+    transition: 0.4s ease;
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.logo-container {
+    width: 100px;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+
+    flex-shrink: 0;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+
+    display: block;
+}
+
+
+/* =========================
+   NAV LINKS
+========================= */
+
+.Navigation nav {
+    display: flex;
+    align-items: center;
+
+    gap: 25px;
+
+    height: 100%;
+}
+
+.Navigation nav a {
+    color: var(--nav-color);
+
+    font-weight: bold;
+    font-size: 20px;
+
+    text-decoration: none;
+
+    letter-spacing: 2px;
+
+    margin: 20px;
+
+    white-space: nowrap;
+
+    transition: color 0.4s ease;
+}
+
+.Navigation nav a:hover {
+    color: #111;
+}
+
+
+/* =========================
+   SIGN UP BUTTON
+========================= */
+
+.buttons {
+    width: 110px;
+    height: 40px;
+
+    background-color: transparent;
+
+    border-radius: 7px;
+
+    color: var(--nav-color);
+
+    border: 1px solid var(--nav-color);
+
+    cursor: pointer;
+
+    font-family: inherit;
+    font-size: 14px;
+
+    transition:
+        color 0.4s ease,
+        border-color 0.4s ease,
+        background-color 0.4s ease;
+}
+
+.buttons:hover {
+    background-color: var(--nav-color);
+    color: #111;
+}
+
+
+/* =========================
+   LOGIN BUTTON
+========================= */
+
+.buttons1 {
+    width: 110px;
+    height: 40px;
+
+    margin: 0;
+
+    border-radius: 7px;
+
+    background-color: var(--nav-color);
+
+    border: 1px solid var(--nav-color);
+
+    color: #111;
+
+    cursor: pointer;
+
+    font-family: inherit;
+    font-size: 14px;
+
+    transition:
+        color 0.4s ease,
+        background-color 0.4s ease,
+        border-color 0.4s ease;
+}
+
+.buttons1:hover {
+    background-color: transparent;
+    color: var(--nav-color);
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .Navigation {
+        height: 65px;
+
+        padding: 0 15px;
+    }
+
+
+    /* LOGO */
+
+    .logo-container {
+        width: 70px;
+        height: 50px;
+    }
+
+    .logo {
+        width: 70px;
+        height: auto;
+    }
+
+
+    /* NAV */
+
+    .Navigation nav {
+        gap: 10px;
+    }
+
+    .Navigation nav a {
+        font-size: 14px;
+        letter-spacing: 0;
+    }
+
+
+    /* BUTTONS */
+
+    .buttons,
+    .buttons1 {
+        width: 75px;
+        height: 32px;
+
+        margin: 0;
+
+        font-size: 11px;
+    }
+}
+
+.buttons1:hover {
+    background-color: transparent;
+    color: var(--nav-color);
+}
+
+.search-container {
+    position: fixed;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 400px;
+    z-index: 9999;
+}
+
+.search-container input {
+    width: 100%;
+    height: 40px;
+    padding: 0 50px 0 20px;
+    box-sizing: border-box;
+
+    border: 2px solid #222;
+    border-radius: 25px;
+    outline: none;
+
+    font-size: 16px;
+    background: white;
+}
+
+.search-container i {
+    position: absolute;
+    right: 20px;
+    top: 12px;
+    font-size: 18px;
+}
+
+/* =========================
+   DESTINATIONS
+========================= */
+
+.destinations {
+    min-height: 100vh;
+
+    padding: 50px 3%;
+
+    background: white;
+}
+
+.section-title {
+    margin-bottom: 45px;
+}
+
+.section-title p,
+.section-label {
+    
+
+    color: #29AB87;
+
+    font-size: 18px;
+
+    letter-spacing: 10px;
+
+    margin-top: 40px;
+
+}
+
+.section-title h2 {
+    font-size: 45px;
+    
+
+    color: #464E47;
+
+    
+
+    margin-top: 10px;
+}
+
+
+/* =========================
+   DESTINATION CONTAINER
+========================= */
+
+.destination-container {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 300px;
+
+    gap: 30px;
+}
+
+
+/* =========================
+   MAIN DESTINATION
+========================= */
+.main-destination {
+    width: 100%;
+    height: 550px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background: #000000;
+}
+
+
+/* =========================
+   MAIN IMAGE
+========================= */
+
+.main-image-container {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+}
+
+.main-image-container img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition:
+        opacity 0.4s ease,
+        transform 0.6s ease;
+}
+
+.main-image-container img.change {
+    opacity: 0;
+
+    transform: scale(1.08);
+}
+
+
+/* =========================
+   IMAGE NUMBER
+========================= */
+
+.image-number {
+    position: absolute;
+
+    bottom: 25px;
+    right: 30px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 13px;
+
+    letter-spacing: 2px;
+
+    z-index: 3;
+}
+
+#currentNumber {
+    color: #d69b5b;
+}
+
+
+/* =========================
+   MAIN INFORMATION
+========================= */
+
+.main-info {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    
+
+    width: 100%;
+    height: 100%;
+
+    padding: 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    z-index: 2;
+
+    /* Dark only on the left */
+    background: linear-gradient(
+    to right,
+    var(--fade-color, rgba(0, 255, 0, 0.3)) 0%,
+
+    color-mix(in srgb, var(--fade-color, rgb(70, 231, 2)) 30%, transparent) 30%,
+
+    color-mix(in srgb, var(--fade-color, rgb(0, 255, 38)) 30%, transparent) 40%,
+    transparent 70%
+    );
+}
+
+
+/* =========================
+   LOCATION
+========================= */
+
+.location-label {
+    color: white;
+
+    font-family: Arial, sans-serif;
+    margin-bottom: 0;
+
+    font-size: 12px;
+
+    letter-spacing: 2px;
+}
+
+
+/* =========================
+   TITLE
+========================= */
+
+.main-info h1 {
+    font-size: 80px;
+
+    width: 50%;
+    margin-top: 0;
+
+    line-height: 1;
+
+    transition: 0.4s;
+}
+
+.main-info h1.change {
+    opacity: 0;
+
+    transform: translateY(20px);
+}
+
+
+/* =========================
+   DESCRIPTION
+========================= */
+
+.main-info p:not(.location-label) {
+    font-family: Arial, sans-serif;
+
+    color: white;
+
+    line-height: 1.7;
+
+    font-size: 11px;
+
+    width: 50%;
+
+    margin-bottom: 30px;
+
+    transition: 0.4s;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.discover-btn {
+    text-decoration: none;
+    width: fit-content;
+
+    padding: 13px 22px;
+
+    border: 5px solid white;
+
+    background: transparent;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-family: "Times New Roman", Times, serif;
+
+    transition: 0.3s;
+}
+
+.discover-btn:hover {
+    background: white;
+
+    color: #000000;
+}
+
+
+/* =========================
+   SIDE CARDS
+========================= */
+
+.side-destinations {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.destination-card {
+    height: 126px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    cursor: pointer;
+
+    border: 1px solid transparent;
+
+    transition:
+        0.4s ease,
+        transform 0.4s ease;
+}
+
+.destination-card img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: 0.5s ease;
+}
+
+.destination-card:hover img {
+    transform: scale(1.1);
+}
+
+.destination-card:hover {
+    transform: translateX(-8px);
+}
+
+.destination-card.active {
+    border: 2px solid #d69b5b;
+
+    transform: translateX(-8px);
+}
+
+.card-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    padding: 18px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.85),
+            rgba(0, 0, 0, 0.1)
+        );
+}
+
+.card-overlay span {
+    font-family: Arial, sans-serif;
+
+    font-size: 12px;
+
+    color: #d69b5b;
+}
+
+.card-overlay h3 {
+    font-size: 22px;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about {
+    min-height: 80vh;
+
+    padding: 120px 10%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+
+    background: white;
+}
+
+.about-image {
+    height: 500px;
+
+    overflow: hidden;
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.about-content h2 {
+    font-size: 55px;
+    color: #29AB87;
+
+    line-height: 1;
+
+    margin-bottom: 30px;
+    margin-top: 100px;
+}
+
+.about-content h2 span {
+    color: #464E47;
+}
+
+.about-content p:not(.section-label) {
+    font-family: Arial, sans-serif;
+
+    color: #000000;
+
+    line-height: 1.8;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact {
+    min-height: 70vh;
+
+    padding: 100px 10%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 80px;
+
+    align-items: center;
+
+    background: rgb(214, 217, 215);
+}
+
+.contact-content h2 {
+    font-size: 55px;
+
+    line-height: 1;
+    color: #464E47;
+
+    margin-bottom: 30px;
+}
+
+.contact-content h2 span {
+    color: #29AB87;
+}
+
+.contact-content > p:not(.section-label) {
+    font-family: Arial, sans-serif;
+
+    color: #464E47;
+
+    line-height: 1.7;
+}
+
+.contact-form {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+
+    padding: 17px;
+
+    background: white;
+
+    border:2px solid #29AB87;
+
+    color: #464E47;
+
+    outline: none;
+
+    font-family: Arial, sans-serif;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #d69b5b;
+}
+
+.contact-form button {
+    padding: 16px;
+
+    border: none;
+
+    background: #29AB87;
+
+    color: #464E47;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: white;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 35px 7%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    background: #0b0b0b;
+}
+
+.footer-logo {
+    font-size: 25px;
+
+    font-weight: bold;
+}
+
+footer p {
+    font-family: Arial, sans-serif;
+
+    color: #777;
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1000px) {
+
+    .Navigation {
+        padding: 0 5%;
+    }
+
+    .Navigation nav {
+        gap: 20px;
+    }
+
+    .destination-container {
+        grid-template-columns: 1fr;
+    }
+
+    .side-destinations {
+        display: grid;
+
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .destination-card {
+        height: 150px;
+    }
+
+    .destination-card.active {
+        transform: none;
+    }
+
+    .destination-card:hover {
+        transform: translateY(-5px);
+    }
+
+}
+
+
+@media (max-width: 750px) {
+
+    .Navigation {
+        height: auto;
+
+        padding: 20px 5%;
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .Navigation nav {
+        gap: 15px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .Navigation nav a {
+        font-size: 12px;
+    }
+
+
+    .home {
+        padding: 150px 7% 80px;
+    }
+
+    .home h1 {
+        font-size: 60px;
+    }
+
+
+    .destinations {
+        padding: 90px 5%;
+    }
+
+    .section-title h2 {
+        font-size: 35px;
+    }
+
+
+    .main-destination {
+        grid-template-columns: 1fr;
+    }
+
+    .main-image-container {
+        height: 400px;
+    }
+
+    .main-info {
+        padding: 40px 30px;
+    }
+
+    .main-info h1 {
+        font-size: 45px;
+    }
+
+
+    .side-destinations {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .about {
+        grid-template-columns: 1fr;
+
+        padding: 90px 7%;
+    }
+
+    .about-image {
+        height: 350px;
+```

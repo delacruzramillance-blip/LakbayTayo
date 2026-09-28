@@ -1,0 +1,570 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+/* TAGAYTAY */
+.dis1 {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.dis1 img {
+    width: 90vw;
+    height: 100vh;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    border-radius: 0 50px 50px 0;
+}
+
+.dis1::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        to right,
+        rgba(3, 249, 15, 0.5),
+        rgba(3, 249, 15, 0.2),
+        transparent
+    );
+
+    z-index: 1;
+}
+
+.text {
+    position: absolute;
+    bottom: 165px;
+    left: 70px;
+    color: white;
+    z-index: 2;
+}
+
+.loc {
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif
+}
+
+.text h2 {
+    font-size: 80px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.descript {
+    width: 50%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+
+/* BAGUIO */
+.dis11 {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.dis11 img {
+    width: 90vw;
+    height: 100vh;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    border-radius: 0 50px 50px 0;
+}
+
+.dis11::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        to right,
+        rgba(255, 166, 0, 0.5),
+        rgba(255, 166, 0, 0.2),
+        transparent
+    );
+
+    z-index: 1;
+}
+
+.text11 {
+    position: absolute;
+    bottom: 165px;
+    left: 70px;
+    color: white;
+    z-index: 2;
+}
+
+.loc11 {
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif
+}
+
+.text11 h2 {
+    font-size: 80px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.descript11 {
+    width: 50%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+
+/*BORACAY*/
+.dis21 {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.dis21 img {
+    width: 90vw;
+    height: 100vh;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    border-radius: 0 50px 50px 0;
+}
+
+.dis21::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        to right,
+        rgba(44, 128, 255, 0.8),
+        rgba(44, 128, 255, 0.4),
+        transparent
+    );
+
+    z-index: 1;
+}
+
+.text21 {
+    position: absolute;
+    bottom: 165px;
+    left: 70px;
+    color: white;
+    z-index: 2;
+}
+
+.loc21 {
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif
+}
+
+.text21 h2 {
+    font-size: 80px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.descript21 {
+    width: 50%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+
+/*BOHOL*/
+.dis31 {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.dis31 img {
+    width: 90vw;
+    height: 100vh;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    border-radius: 0 50px 50px 0;
+}
+
+.dis31::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        to right,
+        rgba(255, 192, 103, 0.7),
+        rgba(255, 192, 103, 0.3),
+        transparent
+    );
+
+    z-index: 1;
+}
+
+.text31 {
+    position: absolute;
+    bottom: 165px;
+    left: 70px;
+    color: white;
+    z-index: 2;
+}
+
+.loc31 {
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif
+}
+
+.text31 h2 {
+    font-size: 80px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.descript31 {
+    width: 50%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+.dis2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dis2-text {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.dis2-text h1 {
+    font-size: 40px;
+    margin: 0;
+    color: #464E47;
+}
+
+.desti {
+    font-size: 50px;
+    color: rgb(179, 119, 7);
+}
+
+.loc1 {
+    font-family: 'Times New Roman', Times, serif;
+    color: #29AB87;
+    margin-top: 70px;
+    font-size: 50px;
+}
+
+.dis2 img {
+    width: 700px;
+    display: block;
+ }
+
+.peo1 {
+    line-height: 34px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+
+.bottom-frame {
+    width: 100%;
+    height: 80px;
+    background-color: rgb(207, 207, 207);
+}
+
+footer {
+    padding: 35px 7%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    background: #0b0b0b;
+}
+
+.footer-logo {
+    font-size: 25px;
+
+    font-weight: bold;
+}
+
+footer p {
+    font-family: Arial, sans-serif;
+
+    color: #ffffff;
+
+    font-size: 13px;
+}
+
+
+
+
+/* ==========
+      MAPS
+   ========== */
+.image-box {
+    position: relative;
+    width: 700px;
+    margin:  auto;
+    margin-top: 40px;
+}
+
+.image-box img {
+    width: 100%;
+    height: 400px;
+    display: block;
+}
+
+.image-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 80%;
+    padding: 20px;
+
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-align: center;
+
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.image-box:hover .image-info {
+    opacity: 1;
+}
+
+.map {
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.map iframe {
+    width: 700px;
+    height: 500px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.search-container {
+    position: fixed;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 400px;
+    z-index: 9999;
+}
+
+.search-container input {
+    width: 31vw;
+    height: 6vh;
+    padding: 0 50px 0 20px;
+    box-sizing: border-box;
+
+    border: 2px solid #222;
+    border-radius: 25px;
+    outline: none;
+
+    font-size: 16px;
+    background: white;
+}
+
+.search-container i {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================
+   PHONE / MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    /* NAVIGATION */
+    .Navigation {
+        height: 65px;
+        padding: 0 15px;
+    }
+
+    .logo {
+        width: 70px;
+        height: auto;
+        margin-left: 0;
+    }
+
+    .Navigation nav {
+        gap: 12px;
+    }
+
+    .Navigation nav a {
+        font-size: 14px;
+        margin-right: 0;
+    }
+
+    .buttons,
+    .buttons1 {
+        width: 75px;
+        height: 32px;
+        font-size: 11px;
+    }
+
+    .buttons1 {
+        margin-right: 0;
+    }
+
+
+    /* =========================
+       MAIN IMAGE
+    ========================= */
+
+    .dis1 {
+        width: 100%;
+    }
+
+    .dis1 img {
+        width: 100%;
+        height: 70vh;
+        object-fit: cover;
+    }
+
+    .text {
+        bottom: 80px;
+        left: 25px;
+        right: 25px;
+    }
+
+    .loc {
+        font-size: 13px;
+    }
+
+    .text h2 {
+        font-size: 45px;
+        margin: 5px 0;
+    }
+
+    .descript {
+        width: 90%;
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+
+    /* =========================
+       DESTINATION
+    ========================= */
+
+    .dis2 {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .dis2-text {
+        width: 100%;
+    }
+
+    .dis2-text h1 {
+        font-size: 28px;
+    }
+
+    .desti {
+        font-size: 38px;
+    }
+
+    .loc1 {
+        margin-top: 40px;
+        font-size: 30px;
+    }
+
+    .dis2 img {
+        width: 100%;
+        max-width: 700px;
+    }
+
+    .peo1 {
+        font-size: 16px;
+        line-height: 26px;
+        text-align: justify;
+    }
+
+
+    /* =========================
+       IMAGE HOVER
+    ========================= */
+
+    .image-box {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .image-info {
+        width: 85%;
+        padding: 15px;
+    }
+
+
+    /* =========================
+       MAP
+    ========================= */
+
+    .map {
+        width: 100%;
+        height: 300px;
+    }
+
+    .map iframe {
+        width: 100%;
+        height: 300px;
+    }
+}
